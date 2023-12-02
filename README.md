@@ -1,21 +1,26 @@
-# GlobalbotMIT License
+# Discord Bot für Support und Rollenverwaltung
 
-Copyright (c) 2023 TheTF
+Dieser Discord-Bot wurde mit Python und der Discord.py-Bibliothek erstellt. Der Bot bietet Funktionen für die Erstellung von Support-Channels und die Verwaltung von Rollen in einem Textkanal.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## Funktionen
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+### 1. Support-Channel erstellen
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Verwende den Befehl `!support`, um einen Support-Channel zu erstellen. Ein eingebettetes Nachrichtenfenster wird angezeigt, und Benutzer können auf die 🆘-Reaktion klicken, um ihren eigenen Support-Channel zu erstellen.
+
+### 2. Rollenverwaltung in einem Textkanal
+
+Verwende den Befehl `!rollen <channel_id> <role1> <role2> ...`, um Rollenberechtigungen in einem bestimmten Textkanal zu verwalten.
+
+### 3. Support-Channel schließen
+
+Verwende den Befehl `!close`, um einen Support-Channel zu schließen und zu löschen.
+
+## Konfiguration
+
+1. Installiere die erforderlichen Abhängigkeiten mit `pip install discord.py`.
+
+2. Füge deinen Bot-Token in die letzte Zeile des Codes ein:
+
+```python
+bot.run('DEIN_BOT_TOKEN')
