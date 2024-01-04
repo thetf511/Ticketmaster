@@ -59,6 +59,5 @@ async def close(ctx):
 @bot.event
 async def on_command_error(ctx, error):
     print(f"Fehler beim Ausführen des Befehls '{ctx.command}': {error}")
-
-
+    
 bot.run('')
